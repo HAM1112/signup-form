@@ -1,0 +1,104 @@
+*{
+    background-color: #000000;
+    color: #d5bde6;
+}
+
+h2{
+    background-color: #0d0116;
+}
+
+body > .main{
+    display: flex;
+    width: auto;
+    height: 100vh;
+}
+
+body > .main > .cover{
+    position: relative;
+    width: max(10rem, 50vw);
+    background-image: url(./images/city.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+
+
+body > .main > .section> .content{
+    font-weight: bold;
+    font-size: x-large;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-right: 80px;
+}
+
+.second{
+    margin: 20px 0px;
+}
+
+.feild-content{
+    background-color: #0d0116;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    padding-top: 10px;
+}
+
+.input-feild{
+    display: grid;
+    gap: 30px;
+    column-gap: 150px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #0d0116;
+    
+}
+.input-feild > div{ 
+    position: relative;
+    width: max(10rem, 60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #0d0116;
+}
+
+.input-feild > div > label{
+    background-color: #0d0116;
+}
+
+.input-feild > div > input{
+    background-color: #ffffff;
+    color: #892CDC;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.input-feild > div > input:focus{
+    border: 4px solid #892CDC;
+}
+
+.last{
+    padding: 20px 50px;
+    font-weight: bold;
+}
+
+.last > button{
+    padding: 15px;
+    background-color: #fbfd90;
+    border-radius: 15px;
+    color: #100043;
+    font-weight: bold;
+}
+
+.last > button:hover{
+    cursor: pointer;
+    background-color: #100043;
+    color: #fbfd90;
+}
+
+.log-in:hover{
+    cursor: pointer;
+    color: #fbfd90;
+}
