@@ -1,29 +1,62 @@
 *{
     background-color: #000000;
     color: #d5bde6;
+    margin: 0px;
+    padding: 0px;
 }
 
-h2{
+@font-face {
+    font-family: 'odinfont';
+    src: url('./Norse-Bold.otf');
+}
+
+
+.section h2{
     background-color: #0d0116;
 }
 
 body > .main{
     display: flex;
-    width: auto;
-    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+
 }
 
 body > .main > .cover{
     position: relative;
-    width: max(10rem, 50vw);
+    flex-grow: 1;
+    width: max(40vw, 350px);
+    height: 100vh;
     background-image: url(./images/city.jpg);
-    background-size: cover;
+    background-size: cover  ;
     background-repeat: no-repeat;
-
-
+    background-position: center;
 }
 
+.cover .logo-bar{
+    background-color: rgba(0, 0, 0,0.4);
+    margin-top: 30%;
+    width: 100%;
+    font-family: 'odinfont';
+    padding: 0px 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.logo-bar img{
+    width: 5rem;
+    padding: 10px;
+    background-color: rgba(0, 0, 0,0);
+}
+.logo-bar h1{
+    background-color: rgba(0, 0, 0,0);
+    font-size: xxx-large;
+}
+
+body > .main > .section{
+    width: 60vw;
+}
 
 body > .main > .section> .content{
     font-weight: bold;
@@ -44,16 +77,17 @@ body > .main > .section> .content{
     padding-bottom: 20px;
     padding-right: 100px;
     padding-top: 10px;
+
 }
 
 .input-feild{
     display: grid;
     gap: 30px;
-    column-gap: 150px;
+    column-gap: 100px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     background-color: #0d0116;
-    
+
 }
 .input-feild > div{ 
     position: relative;
@@ -72,11 +106,20 @@ body > .main > .section> .content{
     background-color: #ffffff;
     color: #892CDC;
     font-weight: bold;
-    border-radius: 25px;
+    border-radius: 12px;
+    padding: 5px 10px;
 }
 
 .input-feild > div > input:focus{
-    border: 4px solid #892CDC;
+    border: 3px solid #d5bde6;
+    box-shadow: 2px 2px 10px #d5bde6;
+    outline: none;
+}
+.input-feild > div > input:invalid{
+    border: 3px solid red;
+}
+.input-feild > div > input:valid{
+    border:3px solid #892CDC ;
 }
 
 .last{
@@ -90,6 +133,7 @@ body > .main > .section> .content{
     border-radius: 15px;
     color: #100043;
     font-weight: bold;
+    margin: 10px 0px;
 }
 
 .last > button:hover{

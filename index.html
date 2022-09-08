@@ -10,7 +10,12 @@
 </head>
 <body>
     <div class="main">
-        <div class="cover"> </div>
+        <div class="cover">
+            <div class="logo-bar">
+                <img src="./images/odin-lined.png" alt="odin-logo">
+                <h1>ODIN</h1>
+            </div>
+        </div>
 
 <!-- content -->
 
@@ -29,36 +34,36 @@
             
             <div class="feild-content">
                 <h2>Let's do this!</h2>
-                <div class="input-feild">
+                <form id="my-form" class="input-feild">
                             <div>
                                 <label for="first-name">First Name</label><br>
-                                <input type="text" id="first-name">
+                                <input type="text" id="first-name" minlength="3" required>
                             </div>
                             <div>
                                 <label for="last-name">Last Name</label><br>
-                                <input type="text" id="last-man">
+                                <input type="text" id="last-man" required>
                             </div>
                             <div>
-                                <label for="email">Email</label><br>
-                                <input type="email" id="email" title="invalid">
+                                <label for="user_email">Email</label><br>
+                                <input type="email" id="user_email" required>
                             </div>
                             <div>
                                 <label for="phone-number">Phone Number</label><br>
-                                <input type="number" id="phone-number">
+                                <input type="number" id="phone-number" minlength="10" maxlength="10" required>
                             </div>
                             <div>
                                 <label for="password">Password</label><br>
-                                <input type="password" id="password">
+                                <input type="password" id="password" required>
                             </div>
                             <div>
                                 <label for="confirm">Confirm Password</label><br>
-                                <input type="password" id="confirm">
+                                <input type="password" id="confirm" required>
                             </div>
-                </div>
+                </form>
                 
             </div>
             <div class="last">
-                <button type="submit" id="submit-btn">Create Account</button>
+                <button type="submit" form="my-form" id="submit-btn">Create Account</button>
                 <p>Already have an account?<span class="log-in"> Log in</span></p>
             </div>
         </div>
